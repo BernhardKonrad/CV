@@ -1,0 +1,73 @@
+---
+title: CV
+layout: post
+---
+
+<h1> CV {{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
+
+<a href="mailto:{{site.data.personal.email}}">{{site.data.personal.email}}</a>, <a href=https://github.com/{{site.data.personal.github}}>github.com/{{site.data.personal.github}}</a>, <a href=https://twitter.com/{{site.data.personal.twitter}}>@{{site.data.personal.twitter}}</a>
+
+<br />
+{{site.data.personal.street}}, {{site.data.personal.city}}, {{site.data.personal.province}}, {{site.data.personal.postal}}, {{site.data.personal.country}}
+
+<br />
+
+
+
+
+<h2> Education </h2>
+
+{% for edu in site.data.education.edu %}
+<i> {% if edu.from %} {{edu.from}} - {{edu.to}}{% else %} {{edu.when}}{% endif %}.</i> {{edu.what}} at <i>{{edu.where}}.</i><br />
+{% if edu.thesis_title %} Thesis: {{edu.thesis_title}}<br />{% endif %}
+{% if edu.prof %} Supervisor: <b>{{edu.prof}}</b><br />{% endif %}
+<br />
+{% endfor %}
+
+
+<h2> Studies Abroad </h2>
+
+{% for studies in site.data.others.studies_abroad %}
+<i> {{studies.from}} - {{studies.to}}. </i> {{studies.details}}
+<br />
+{% endfor %}
+
+<h2> Summer Schools and Workshops </h2>
+
+{% for ws in site.data.others.workshop %}
+<i> {{ws.when}}. </i> {{ws.name}}, <b>{{ws.where}}</b> <br />
+<i> Project: {{ws.project}}.</i>
+<br /><br />
+{% endfor %}
+
+<h2> Teaching Experience </h2>
+
+to be added soon
+
+<h2> Scholarships </h2>
+
+to be added soon
+
+<h2> Publications </h2>
+
+to be added soon
+
+<h2> Selected Seminar talks and Poster Presentations </h2>
+
+to be added soon
+
+<h2> Extracurricular Activities </h2>
+
+{% for activity in site.data.others.extracurricular %}
+<i> {% if activity.from %} {{activity.from}} - {{activity.to}}{% else %} {{activity.when}}{% endif %}.</i> {{activity.what}}.
+<br /><br />
+{% endfor %}
+
+
+<h2> Personal Interest </h2>
+
+{% for interest in site.data.others.personal_interest %}
+{{interest}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} 
+{% endfor %}
+
+<div align="right"> Vancouver, August 2014 </div>

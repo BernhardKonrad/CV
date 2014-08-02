@@ -1,0 +1,26 @@
+edu:
+ - from: 09/10
+   to: present
+   what: PhD Student in Mathematics
+   where: The University of British Columbia
+   prof: Prof. Dr. Daniel Coombs
+
+ - when: 07/11
+   what: Diploma in Mathematics (M.Sc. equivalent)   
+   where: The Karlsruhe Institute of Technology
+   thesis_title: The Model Theory for Hilbert Space Contractions
+   prof: Prof. Dr. Roland Schnaubelt
+
+ - from: 10/06
+   to: 07/10
+   what: Graduate Student in Mathematics
+   where: The Karlsruhe Institute of Technology
+
+ - from: 10/04
+   to: 09/06
+   what: Undergraduate Student in Mathematics
+   where: The Karlsruhe Institute of Technology
+
+ - when: 06/04
+   what: Abitur
+   where: Friedrich-Koenig-Gymnasium, Wuerzburg

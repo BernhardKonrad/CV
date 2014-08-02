@@ -1,0 +1,80 @@
+studies_abroad:
+ - from: 09/07
+   to: 03/08
+   details: Exchange student at the Department of Mathematics at the University of Ottawa, Canada. Courses also taken at Carleton University in Ottawa, Canada.
+
+ - from: 04/08
+   to: 07/08
+   details: Research Assistant at the University of Ottawa, supervised by Prof. Dr. Robert Smith?, funded by MITACS.
+
+
+workshop:
+ - when: 06/13
+   name: MBI-NIMBioS-CAMBAM Summer Graduate Workshop. Connecting Biological Data with Mathematical Models.
+   where: The University of Tennessee, Knoxville, TN
+   project: Comparison of Methods for Parameter Estimation. Stochastic SEIR Ebola Model as a Case Study
+
+ - when: 07/12
+   name: The Sixth q-bio Summer School and Conference. Track 4. Viral Dynamics
+   where: Santa Fe, NM
+   project: The relationship between individual and population-based hazards of AIDS-progression
+
+ - when: 06/12
+   name: MBI-NIMBioS-CAMBAM Summer Graduate Workshop. Stochastics Applied to Biological Systems
+   where: Ohio State University, OH
+   project: Parameter Sensitivities and Markov Chain Models
+
+ - when: 06/10
+   name: Internet Seminar 2009/2010. Gradient Systems
+   where: Kacov, Czech Republic
+   project: Gradient Systems in Image Reconstruction
+
+ - when: 04/10
+   name: 73rd European Study Group with Industy
+   where: Warwick, UK
+   project: Modelling Hurricane Track Memory
+
+
+extracurricular:
+ - from: 02/12
+   to: present
+   what: Founding member, contributor and main organizer of the Math Exam/Educational Resources, which provide free hints and solution to UBC Math exams
+   url: http://wiki.ubc.ca/Science:Math_Exam_Resources
+
+ - from: 01/13
+   to: present
+   what: Instructor at Software Carpentry, a large group of volunteers who teach basic software skills to researchers in science, engineering and medicine
+   url: http://www.software-carpentry.org
+
+ - from: 09/11
+   to: 05/13
+   what: Founding member of the Student Committee of the Institute of Applied Mathematics UBC, to improve the student community and learning environment
+
+ - when: 11/10
+   what: Correspondence Chess Champion of Unterfranken (Bavaria, Germany) 2009/2010
+
+ - from: 10/09
+   to: 07/10
+   what: Co-Organizer of the intramural sport group Chess at the Karlsruhe Institute of Technology
+
+ - from: 03/06
+   to: 08/10
+   what: Staff member at Login e.V., an open catholic youth group for teenagers
+
+ - from: 04/05
+   to: 03/07
+   what: Youth Director at the chess club Karlsruher Schachfreunde
+
+personal_interest:
+ - Friends
+ - Discussions
+ - Politics
+ - Renewable energy and sustainability
+ - Fair wages
+ - Programming
+ - Travelling
+ - Meeting new people
+ - Guitar
+ - Soccer
+ - Chess
+ - Silence
