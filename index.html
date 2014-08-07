@@ -79,9 +79,14 @@ layout: post
 <i>{{paper.title}}.</i> {{paper.journal}}, {{paper.publish_date}}{% if paper.doi %}<div class="doi">&nbsp;(doi: {{paper.doi}})</div>{% endif %}.<br /> <br />
 {% endfor %}
 
+
 <h2> Selected Seminar talks and Poster Presentations </h2>
 
-to be added soon
+{% for talk in site.data.talks.talks %}
+{{talk.when}}. <i>{{talk.title}}</i><br />
+{{talk.conference}} in {{talk.where}}{% if talk.others %} ({{talk.others}}){% endif %}. <br /><br />
+{% endfor %}
+
 
 <h2> Extracurricular Activities </h2>
 

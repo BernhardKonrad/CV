@@ -1,0 +1,52 @@
+talks:
+ - when: 06/14
+   title: "An Introduction to Python and Reproducible Research"
+   conference: "PIMS Young Researcher Conference"
+   where: Vancouver, BC
+
+ - when: 01/13
+   title: Estimating the length of the window period for HIV infection
+   conference: Disease Dynamics
+   where: Vancouver, BC
+   others: 1st prize for best poster
+
+ - when: 12/12
+   title: Estimating the length of the window period for HIV infection
+   conference: Open Problems in Mathematical Epidemiology
+   where: Vancouver, BC
+
+ - when: 10/12
+   title: Mathematical models that predict the length of the window period for HIV infection
+   conference: IGTC Annual Summit and Workshop
+   where: Naramata, BC
+
+ - when: 07/11
+   title: "Stochastic model-based predictions on post-exposure prophylaxis strategies for prevention of HIV infection"
+   conference: European Conference on Mathematical and Theoretical Biology and Annual Meeting of The Society for Mathematical Biology
+   where: Krakow, Poland
+   others: Invited talk
+
+ - when: 06/11
+   title: "Control of age-structured population model"
+   conference: "Workshop of the Internet Seminar 2010/2011: Infinite-dimensional Linear Systems Theory"
+   where: Blaubeuren, Germany
+
+ - when: 02/11
+   title: "Stochastic-model predictions on the emergence of drug-resistance against anti retroviral treatments for HIV"
+   conference: Frontiers in Biophysics
+   where: Vancouver, BC
+
+ - when: 06/10
+   title: Gradient Systems in Image Reconstruction
+   conference: "Workshop of the Internet Seminar 2009/2010: Gradient Systems"
+   where: Kacov, Czech Republic
+
+ - when: 04/10
+   title: "Modelling Hurricane Track Memory"
+   conference: 73rd European Study Group with Industry
+   where: Warwick, UK
+
+ - when: 06/09
+   title: Dilations of Positive Operators
+   conference: "Workshop of the Internet Seminar 2008/2009: Ergodic Theory - An Operator Theoretic Approach"
+   where: Blaubeuren, Germany
