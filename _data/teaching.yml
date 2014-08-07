@@ -1,0 +1,118 @@
+ubc:
+ - from: 09/13
+   to: 12/13
+   what: Meach 221
+   details: Lecturing four weekly MATLAB classes, tutoring and grading lab work
+
+ - from: 01/13
+   to: 04/13
+   what: Math 152 Linear Systems
+   details: Tutoring MATLAB labs and grading weekly lab work
+
+ - from: 09/12
+   to: 12/12
+   what: Math 200 Multivariable calculus
+   details: Grading four midterms for the entire classes
+
+ - from: 01/12
+   to: 04/12
+   what: Math 103 Integral Calculus with Applications to Life Sciences
+   details: Instructor of section with 80 students
+
+ - from: 01/11
+   to: 04/11
+   what: Tutor in the Mathematics Learning Centre
+
+ - from: 09/10
+   to: 12/10
+   what: Math 305 Applied Complex Analysis
+   details: Grading weekly assignments
+
+
+kit:
+ - from: 10/09
+   to: 03/10
+   what: Functional Analysis
+   details: Grading weekly assignments of graduate students
+
+ - from: 10/08
+   to: 09/09
+   what: Mathematics III & II
+   details: Facilitating weekly review classes, grading final exam
+
+ - from: 10/06
+   to: 09/07
+   what: Mathematics I & II
+   details: Facilitating weekly review classes, grading final exam
+
+ - from: 10/05
+   to: 09/06
+   what: Linear Algebra I & II
+   details: Facilitating weekly review classes, grading weekly assignments
+
+
+swc:
+ - when: 06/14
+   what: Advanced R Workshop
+   where: UC Davis
+   role: Instructor
+
+ - when: 05/14
+   what: R Workshop
+   where: UBC, Vancouver
+   role: Helper
+
+ - when: 03/14
+   what: R Workshop
+   where: The University of Washington, Seattle
+   role: Instructor
+
+ - when: 02/14
+   what: R Workshop
+   where: Simon Fraser University, Vancouver
+   role: Organizer and Instructor
+
+ - when: 01/14
+   what: Advanced R Workshop
+   where: The University of Miami
+   role: Instructor
+
+ - when: 12/13
+   what: Python Workshop
+   where: SESYNC, Annapolis
+   role: Instructor
+
+ - when: 06/13
+   what: Python Workshop
+   where: Simon Fraser University, Vancouver
+   role: Instructor
+
+ - when: 05/13
+   what: Python Workshop
+   where: Stanford University, Palo Alto
+   role: Instructor
+
+ - when: 02/13
+   what: Python Workshop
+   where: The University of Washington, Seattle
+   role: Instructor
+
+ - when: 02/13
+   what: Python Workshop
+   where: The University of British Columbia, Vancouver
+   role: Helper
+
+ - when: 01/13
+   what: Advanced R Workshop
+   where: The University of British Columbia, Vancouver
+   role: Instructor
+
+ - when: 01/13
+   what: Beginners R Workshop
+   where: The University of British Columbia, Vancouver
+   role: Helper
+
+ - when: 10/12
+   what: Python Workshop
+   where: The University of British Columbia, Vancouver
+   role: Helper
