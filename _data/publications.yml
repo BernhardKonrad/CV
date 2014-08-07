@@ -1,0 +1,60 @@
+papers:
+ - when: 07/14
+   authors:
+     - Taylor D
+     - Durigon M
+     - Davis H
+     - Archibald C
+     - Konrad B
+     - Coombs D
+     - Gilbert M
+     - Cook D
+     - Krajden M
+     - Wong T
+     - Ogilvie G
+   title: "Probability of a false negative HIV antibody test result during the window period: a tool for pre- and post-test counselling"
+   journal: Int J STD AIDS
+   publish_date: 2014 Jul 16
+
+
+
+ - when: 06/14
+   authors:
+    - Konrad B
+    - Lindstroem M
+    - Gumpinger A
+    - Zhu J
+    - Coombs D
+   title: "Assessing the optimal virulence of malaria-targeting mosquito pathogens: a mathematical study of engineered Metarhizium anisopliae"
+   journal: "Malaria Journal, 13:11"
+   publish_date: 2014
+   doi: "10.1186/1475-2875-13-11"
+
+ - when: 04/13
+   authors:
+    - Conway J
+    - Konrad B
+    - Coombs D
+   title: "Stochastic analysis of pre- and post-exposure prophylaxis against HIV infection."
+   journal: "SIAM J. Appl. Math., 73(2), 904-928"
+   publish_date: 2013
+   doi: "10.1137/120876800"
+
+ - when: 04/11
+   authors:
+    - Konrad B
+    - Vaidya N
+    - Smith? R
+   title: "Modelling Mutation to a Cytotoxic T-lymphocyte HIV Vaccine"
+   journal: "Mathematical Population Studies, 18:122-149"
+   publish_date: 2011
+   doi: "10.1080/08898480.2011.56456"
+
+ - when: 09/09
+   authors:
+    - Konrad B
+    - Smith? R
+    - Lutscher F
+   title: "Gender Differences in Heterosexual Transmission of HIV in Urban and Rural Populations"
+   journal: Advances in Disease Epidemiology, J. M. Tchuenche and Z. Mukandavire (editors). pp.31-58, Nova Publishers
+   publish_date: 2009

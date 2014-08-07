@@ -3,6 +3,13 @@ title: CV
 layout: post
 ---
 
+<style>
+.doi {
+    display: inline-block;
+    font-size: 12px;
+}
+</style>
+
 <h1> CV {{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
 
 <a href="mailto:{{site.data.personal.email}}">{{site.data.personal.email}}</a>, <a href=https://github.com/{{site.data.personal.github}}>github.com/{{site.data.personal.github}}</a>, <a href=https://twitter.com/{{site.data.personal.twitter}}>@{{site.data.personal.twitter}}</a>
@@ -67,7 +74,10 @@ layout: post
 
 <h2> Publications </h2>
 
-to be added soon
+{% for paper in site.data.publications.papers %}
+{{paper.when}}. {% for author in paper.authors %}{% if author contains 'Konrad' %}<b>{{author}}</b>{% else %}{{author}}{% endif %}{% unless {{forloop.last}} %}, {% else %}.{% endunless %}{% endfor %} 
+<i>{{paper.title}}.</i> {{paper.journal}}, {{paper.publish_date}}{% if paper.doi %}<div class="doi">&nbsp;(doi: {{paper.doi}})</div>{% endif %}.<br /> <br />
+{% endfor %}
 
 <h2> Selected Seminar talks and Poster Presentations </h2>
 
