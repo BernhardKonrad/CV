@@ -44,24 +44,26 @@ layout: post
 
 <h3> At The University of British Columbia </h3>
 {% for pos in site.data.teaching.ubc %}
-{{pos.from}} - {{pos.to}} <b> {{pos.what}}.</b> {% if pos.details %}{{pos.details}}.{% endif %} <br />
+{{pos.from}} - {{pos.to}}. <b> {{pos.what}}.</b> {% if pos.details %}{{pos.details}}.{% endif %} <br />
 {% endfor %}
 
 <h3> Software Carpentry Workshops <a href="http://www.software-carpentry.org">software-carpentry.org</a> </h3>
 {% for pos in site.data.teaching.swc %}
-{{pos.when}} <b> {{pos.what}} </b><i>at {{pos.where}}</i> - {{pos.role}} <br />
+{{pos.when}}. <b> {{pos.what}} </b><i>at {{pos.where}}</i> - {{pos.role}} <br />
 {% endfor %}
 
 
 <h3> At The Karlsruhe Institute of Technology </h3>
 {% for pos in site.data.teaching.kit %}
-{{pos.from}}-  {{pos.to}} <b> {{pos.what}}.</b> {% if pos.details %}{{pos.details}}.{% endif %} <br />
+{{pos.from}} - {{pos.to}}. <b> {{pos.what}}.</b> {% if pos.details %}{{pos.details}}.{% endif %} <br />
 {% endfor %}
 
 
 <h2> Scholarships </h2>
 
-to be added soon
+{% for scholar in site.data.scholarships.scholarship %}
+{{scholar.from}} - {{scholar.to}}. <b>{{scholar.what}}</b> from the <i>{{scholar.who}}</i>{%if scholar.details %} ({{scholar.details}}){% endif %}. <br />
+{% endfor %}
 
 <h2> Publications </h2>
 
