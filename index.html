@@ -20,7 +20,7 @@ h2{
 }
 </style>
 
-<h1> CV {{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
+<h1> <a href="https://github.com/BernhardKonrad/CV">CV</a> {{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
 
 <a href="mailto:{{site.data.personal.email}}">{{site.data.personal.email}}</a>, <a href=https://github.com/{{site.data.personal.github}}>github.com/{{site.data.personal.github}}</a>, <a href=https://twitter.com/{{site.data.personal.twitter}}>twitter.com/{{site.data.personal.twitter}}</a>
 
@@ -29,7 +29,9 @@ h2{
 <br /><br />
 
 Place of Birth&#58; {{site.data.personal.birth.place}}, Country of Citizenship&#58; {{site.data.personal.citizenship}}
+<br />
 
+Programming Languages: <b>{% for lan in {{site.data.personal.programming_languages}} %} {{lan}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} {% endfor %}</b>
 
 
 
@@ -129,4 +131,5 @@ Place of Birth&#58; {{site.data.personal.birth.place}}, Country of Citizenship&#
 {{interest}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} 
 {% endfor %}
 
+<br /><br />
 <div align="right"> Vancouver, September 2014 </div>

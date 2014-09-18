@@ -15,3 +15,11 @@ city: Vancouver
 province: BC
 postal: V6T 1Z2
 country: Canada
+programming_languages:
+ - Python
+ - Java
+ - Bash
+ - R
+ - MATLAB
+ - C++
+ - SQL
