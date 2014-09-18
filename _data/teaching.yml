@@ -1,7 +1,12 @@
 ubc:
+ - from: 09/14
+   to: 12/14
+   what: <a href="http://stat545-ubc.github.io/">Stat 545/457 Data wrangling, exploration, and analysis with R</a>
+   details: Helping course organization, moderating student questions on GitHub, write-up of how-to summaries
+
  - from: 09/13
    to: 12/13
-   what: Meach 221
+   what: Mech 221 Engineering Science
    details: Lecturing four weekly MATLAB classes, tutoring and grading lab work
 
  - from: 01/13
@@ -17,7 +22,7 @@ ubc:
  - from: 01/12
    to: 04/12
    what: Math 103 Integral Calculus with Applications to Life Sciences
-   details: Instructor of section with 80 students
+   details: Instructor of a section with 80 students
 
  - from: 01/11
    to: 04/11
@@ -28,30 +33,12 @@ ubc:
    what: Math 305 Applied Complex Analysis
    details: Grading weekly assignments
 
-
-kit:
- - from: 10/09
-   to: 03/10
-   what: Functional Analysis
-   details: Grading weekly assignments of graduate students
-
- - from: 10/08
-   to: 09/09
-   what: Mathematics III & II
-   details: Facilitating weekly review classes, grading final exam
-
- - from: 10/06
-   to: 09/07
-   what: Mathematics I & II
-   details: Facilitating weekly review classes, grading final exam
-
- - from: 10/05
-   to: 09/06
-   what: Linear Algebra I & II
-   details: Facilitating weekly review classes, grading weekly assignments
-
-
 swc:
+ - when: 08/14
+   what: Python and SQL Workshop
+   where: Kiel, Germany
+   role: Instructor
+
  - when: 06/14
    what: Advanced R Workshop
    where: UC Davis
@@ -116,3 +103,25 @@ swc:
    what: Python Workshop
    where: The University of British Columbia, Vancouver
    role: Helper
+
+
+kit:
+ - from: 10/09
+   to: 03/10
+   what: Functional Analysis
+   details: Grading weekly assignments of graduate students
+
+ - from: 10/08
+   to: 09/09
+   what: Mathematics III & II
+   details: Facilitating weekly review classes, grading final exam
+
+ - from: 10/06
+   to: 09/07
+   what: Mathematics I & II
+   details: Facilitating weekly review classes, grading final exam
+
+ - from: 10/05
+   to: 09/06
+   what: Linear Algebra I & II
+   details: Facilitating weekly review classes, grading weekly assignments

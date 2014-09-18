@@ -1,11 +1,12 @@
 edu:
  - from: 09/10
    to: present
-   what: PhD Student in Mathematics
+   what: PhD Student in Applied Mathematics
    where: The University of British Columbia
+   thesis_title: Stochastic models of Early HIV Infection
    prof: Prof. Dr. Daniel Coombs
 
- - when: 07/11
+ - when: 07/10
    what: Diploma in Mathematics (M.Sc. equivalent)   
    where: The Karlsruhe Institute of Technology
    thesis_title: The Model Theory for Hilbert Space Contractions

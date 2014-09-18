@@ -1,0 +1,116 @@
+side:
+ - from: 02/12
+   to: present
+   what: Math Exam/Educational Resources (MER)
+   url: http://wiki.ubc.ca/Science:Math_Exam_Resources
+   role: Founding member, Head of organizing committee, Team manager, Web developer
+   languages:
+    - MediaWiki
+    - CSS
+    - HTML
+   items:
+    - Volunteer initiative that provides full hints and solutions to 49 (and counting) past UBC undergraduate math exams for free under a creative commons license.
+    - Reaches >80% of the several thousand first year UBC students that take math courses.
+    - Over a million pageviews and cummulatively 4.5 years spent on the resource in the first 2 years after inception.
+    - Crashed the UBC server during the April 2014 exam period because too many users tried to access the MER webpage.
+    - Students rank MER best with regards to learning mathematics (highly effective&#58; 58%), ahead of Homework (49%), Lecture (35%), Textbook (23%), Tutoring Centre (13%).
+    - We recently hired a research assistant to formally study our impact, paid for by our UBC Teaching and Learning Enhancement Grant.
+
+ - from: 07/13
+   to: present
+   what: Analysing Google Analytics data of MER
+   role: Data analysis and visualization
+   languages:
+    - Python (numpy, scipy, matplotlib)
+    - GitHub
+   items:
+    - <a href="http://nbviewer.ipython.org/github/MER-wiki/google-analytics/blob/master/mer_py_google_analytics.ipynb">Analysis and summary statistics of MER usage</a>
+    - <a href="http://nbviewer.ipython.org/github/MER-wiki/google-analytics/blob/master/Correlation_avg_time_spent_to_avg_rating_to_exam_score.ipynb">Correlation analysis of user difficulty rating, time spent on pages and exam score.</a>
+
+ - from: 03/14
+   to: present
+   what: Android App for MER
+   url: https://play.google.com/store/apps/details?id=mer.study.helper
+   role: Android developer
+   languages:
+    - Java
+    - SQL
+    - Android Studio
+   items:
+    - Self-taught from <a href="https://class.coursera.org/android-001">Dr. Adam Porter's Coursera class</a>.
+    - All profit goes towards improving the MER resource.
+
+ - from: 01/13
+   to: present
+   what: Instructor at Software Carpentry
+   url: http://software-carpentry.org/
+   role: Organizer, Instructor, and Helper at bootcamps. Contributing to the lesson material
+   languages:
+    - Bash
+    - Python
+    - R
+    - GitHub
+    - SQL
+   items:
+    - A group of volunteers that teach hundreds of basic software skills to researchers in science, engineering, and medicine.
+    - Taught several two-day bootcamps on best programming practices (see below).
+
+ - when: 06/14
+   what: Hacking Health Vancouver 2014
+   url: http://www.hackinghealth.ca/events/vancouver/hhvancouver2014/
+   role: Android and iOS developer, Team manager
+   languages:
+    - Python (Kivy)
+    - GitHub
+    - Bash
+   items:
+    - Three day Hackathon for improving healthcare through technology.
+    - In a team of four we built the mobile app <a href="http://jeromelefebvre.github.io/ChildFirst/">Child First</a> to facilitate guidance as well as a faster and more secure way to collect and report evidence for child abuse.
+    - Winner of the <i>The MGS Award for outstanding work with eHealth Design</i>.
+    - Selected as <i>The People's Choice App</i> for best project, voted by the audience.
+
+ - from: 01/14  
+   to: 06/14
+   what: Algorithms Seminar
+   role: Organizer, presenter
+   languages:
+    - Python
+    - GitHub
+   items:
+    - Not-for-credit weekly seminar on theory and implementation of classic sorting and optimizing algorithms.
+    - As a final project we used the multi-platform <a href="http://kivy.org/"><b>Python-Kivy</b></a> to write a card game <a href="https://play.google.com/store/apps/details?id=org.cantor.shugou">Shugou</a> for Android and iOS.
+
+ - from: 09/13
+   to: 12/13
+   what: Wind turbine distance
+   url: https://github.com/BernhardKonrad/windAbstand
+   role: Software developer, Data aggregation
+   languages:
+    - Google Maps API
+    - JavaScript
+    - Python
+    - Bash
+   items:
+   - The distance between wind turbines and residential areas in Lower Franconia, Bavaria is a heated political controversy.
+   - To facilitate a sensible discussion that is based on facts rather than ideology, this dynamic map visualizes the location of all existing wind turbines in Lower Franconia and their distance to residential areas.
+   - Moving the distance threshold parameter reveals which areas would remain available as possible locations for new wind turbines.
+
+ - from: 09/12
+   to: 12/12
+   what: Dice Game Contest
+   url: http://www.math.ubc.ca/~konradbe/wuerfel/
+   role: MATLAB developer, AI
+   languages:
+    - MATLAB
+   items:
+    - Implemented a fun dice game as a MATLAB GUI, freely available on <a href="http://www.mathworks.com/matlabcentral/fileexchange/42315-dice-game">Mathworks Fileexchange</a>.
+    - Organized and ran a contest among friends to compete for building the best artificial intelligence.
+    - The <a href="http://www.math.ubc.ca/~konradbe/wuerfel/cpu_harhar007.m">final version of my AI</a> was optimized using a simple evolutionary algorithm.
+
+
+
+
+
+
+
+

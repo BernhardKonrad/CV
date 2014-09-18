@@ -8,16 +8,27 @@ layout: post
     display: inline-block;
     font-size: 12px;
 }
+body, html{
+    margin:10pt;
+}
+ul.square {
+    list-style-type: square;
+}
+h2{
+    background-color: #B4CDCD;
+    padding: 5pt;
+}
 </style>
 
 <h1> CV {{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
 
-<a href="mailto:{{site.data.personal.email}}">{{site.data.personal.email}}</a>, <a href=https://github.com/{{site.data.personal.github}}>github.com/{{site.data.personal.github}}</a>, <a href=https://twitter.com/{{site.data.personal.twitter}}>@{{site.data.personal.twitter}}</a>
+<a href="mailto:{{site.data.personal.email}}">{{site.data.personal.email}}</a>, <a href=https://github.com/{{site.data.personal.github}}>github.com/{{site.data.personal.github}}</a>, <a href=https://twitter.com/{{site.data.personal.twitter}}>twitter.com/{{site.data.personal.twitter}}</a>
 
 <br />
 {{site.data.personal.street}}, {{site.data.personal.city}}, {{site.data.personal.province}}, {{site.data.personal.postal}}, {{site.data.personal.country}}
+<br /><br />
 
-<br />
+Place of Birth&#58; {{site.data.personal.birth.place}}, Country of Citizenship&#58; {{site.data.personal.citizenship}}
 
 
 
@@ -28,24 +39,23 @@ layout: post
 <i> {% if edu.from %} {{edu.from}} - {{edu.to}}{% else %} {{edu.when}}{% endif %}.</i> {{edu.what}} at <i>{{edu.where}}.</i><br />
 {% if edu.thesis_title %} Thesis: {{edu.thesis_title}}<br />{% endif %}
 {% if edu.prof %} Supervisor: <b>{{edu.prof}}</b><br />{% endif %}
-<br />
+{% unless {{forloop.last}} %}<br />{% endunless %}
 {% endfor %}
 
 
-<h2> Studies Abroad </h2>
+<h2> Side Projects </h2>
 
-{% for studies in site.data.others.studies_abroad %}
-<i> {{studies.from}} - {{studies.to}}. </i> {{studies.details}}
-<br />
+{% for side in site.data.sideprojects.side %}
+<i> {% if side.from %} {{side.from}} - {{side.to}}{% else %} {{side.when}}{% endif %}.</i> {% if {{side.url}} %}<a href={{side.url}}>{{side.what}}.</a> {% else %} {{side.what}}.{% endif %}
+<b>{% for language in {{side.languages}} %} {{language}}{% unless {{forloop.last}} %},{% endunless %} {% endfor %}</b> <br/ >
+{{side.role}}.
+<ul class="square">
+{% for item in {{side.items}} %}
+<li> {{item}} </li>
+{% endfor %}
+</ul>
 {% endfor %}
 
-<h2> Summer Schools and Workshops </h2>
-
-{% for ws in site.data.others.workshop %}
-<i> {{ws.when}}. </i> {{ws.name}}, <b>{{ws.where}}</b> <br />
-<i> Project: {{ws.project}}.</i>
-<br /><br />
-{% endfor %}
 
 <h2> Teaching Experience </h2>
 
@@ -66,12 +76,6 @@ layout: post
 {% endfor %}
 
 
-<h2> Scholarships </h2>
-
-{% for scholar in site.data.scholarships.scholarship %}
-{{scholar.from}} - {{scholar.to}}. <b>{{scholar.what}}</b> from the <i>{{scholar.who}}</i>{%if scholar.details %} ({{scholar.details}}){% endif %}. <br />
-{% endfor %}
-
 <h2> Publications </h2>
 
 {% for paper in site.data.publications.papers %}
@@ -88,6 +92,29 @@ layout: post
 {% endfor %}
 
 
+<h2> Studies Abroad </h2>
+
+{% for studies in site.data.others.studies_abroad %}
+<i> {{studies.from}} - {{studies.to}}. </i> {{studies.details}}
+<br />
+{% endfor %}
+
+<h2> Summer Schools and Workshops </h2>
+
+{% for ws in site.data.others.workshop %}
+<i> {{ws.when}}. </i> {{ws.name}}, <b>{{ws.where}}</b> <br />
+<i> Project: {{ws.project}}.</i>
+<br /><br />
+{% endfor %}
+
+<h2> Scholarships </h2>
+
+{% for scholar in site.data.scholarships.scholarship %}
+{{scholar.from}} - {{scholar.to}}. <b>{{scholar.what}}</b> from the <i>{{scholar.who}}</i>{%if scholar.details %} ({{scholar.details}}){% endif %}. <br />
+{% endfor %}
+
+
+
 <h2> Extracurricular Activities </h2>
 
 {% for activity in site.data.others.extracurricular %}
@@ -102,4 +129,4 @@ layout: post
 {{interest}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} 
 {% endfor %}
 
-<div align="right"> Vancouver, August 2014 </div>
+<div align="right"> Vancouver, September 2014 </div>
