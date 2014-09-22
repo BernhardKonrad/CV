@@ -3,22 +3,22 @@ title: CV
 layout: post
 ---
 
-<style>
-.doi {
-    display: inline-block;
-    font-size: 12px;
-}
-body, html{
-    margin:10pt;
-}
-ul.square {
-    list-style-type: square;
-}
-h2{
-    background-color: #B4CDCD;
-    padding: 5pt;
-}
-</style>
+{% include bernhard.css %}
+
+<body class="news">
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="education"><a href="#Education">Education</a></li>
+        <li class="side Projects"><a href="#Side Projects">Side Projects</a></li>
+        <li class="teching"><a href="#Teaching">Teaching</a></li>
+        <li class="publications"><a href="#Publications">Publications</a></li>
+        <li class="talks"><a href="#Talks">Talks</a></li>
+        <li class="extracurricular"><a href="#Extracurricular">Extracurricular</a></li>
+      </ul>
+    </div>
+  </header>
+</body>
 
 <h1> <a href="https://github.com/BernhardKonrad/CV">CV</a> {{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
 
@@ -34,8 +34,9 @@ Place of Birth&#58; {{site.data.personal.birth.place}}, Country of Citizenship&#
 Programming Languages: <b>{% for lan in {{site.data.personal.programming_languages}} %} {{lan}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} {% endfor %}</b>
 
 
-
+<A NAME="Education">
 <h2> Education </h2>
+
 
 {% for edu in site.data.education.edu %}
 <i> {% if edu.from %} {{edu.from}} - {{edu.to}}{% else %} {{edu.when}}{% endif %}.</i> {{edu.what}} at <i>{{edu.where}}.</i><br />
@@ -45,6 +46,7 @@ Programming Languages: <b>{% for lan in {{site.data.personal.programming_languag
 {% endfor %}
 
 
+<A NAME="Side Projects">
 <h2> Side Projects </h2>
 
 {% for side in site.data.sideprojects.side %}
@@ -59,6 +61,7 @@ Programming Languages: <b>{% for lan in {{site.data.personal.programming_languag
 {% endfor %}
 
 
+<A NAME="Teaching">
 <h2> Teaching Experience </h2>
 
 <h3> At The University of British Columbia </h3>
@@ -78,6 +81,7 @@ Programming Languages: <b>{% for lan in {{site.data.personal.programming_languag
 {% endfor %}
 
 
+<A NAME="Publications">
 <h2> Publications </h2>
 
 {% for paper in site.data.publications.papers %}
@@ -86,12 +90,14 @@ Programming Languages: <b>{% for lan in {{site.data.personal.programming_languag
 {% endfor %}
 
 
+<A NAME="Talks">
 <h2> Selected Seminar talks and Poster Presentations </h2>
 
 {% for talk in site.data.talks.talks %}
 {{talk.when}}. <i>{{talk.title}}</i><br />
 {{talk.conference}} in {{talk.where}}{% if talk.others %} ({{talk.others}}){% endif %}. <br /><br />
 {% endfor %}
+
 
 
 <h2> Studies Abroad </h2>
@@ -116,7 +122,7 @@ Programming Languages: <b>{% for lan in {{site.data.personal.programming_languag
 {% endfor %}
 
 
-
+<A NAME="Extracurricular">
 <h2> Extracurricular Activities </h2>
 
 {% for activity in site.data.others.extracurricular %}
