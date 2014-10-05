@@ -4,7 +4,7 @@ middlename: Paul
 middleshort: P
 birth:
  date: 1984-11-07
- place: Wuerzburg
+ place: W&uuml;rzburg
 nationality: German
 citizenship: Germany
 email: bernhard.konrad@gmail.com
@@ -22,4 +22,7 @@ programming_languages:
  - R
  - MATLAB
  - C++
+ - Scala
  - SQL
+
+# thank you for icons: https://github.com/barryclark/jekyll-now

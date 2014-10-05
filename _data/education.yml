@@ -12,16 +12,16 @@ edu:
    thesis_title: The Model Theory for Hilbert Space Contractions
    prof: Prof. Dr. Roland Schnaubelt
 
- - from: 10/06
-   to: 07/10
-   what: Graduate Student in Mathematics
-   where: The Karlsruhe Institute of Technology
-
  - from: 10/04
-   to: 09/06
-   what: Undergraduate Student in Mathematics
+   to: 07/10
+   what: Undergraduate and Graduate Student in Mathematics (with minor in Computer Science)
    where: The Karlsruhe Institute of Technology
 
- - when: 06/04
-   what: Abitur
-   where: Friedrich-Koenig-Gymnasium, Wuerzburg
+# - from: 10/04
+#   to: 09/06
+#   what: Undergraduate Student in Mathematics
+#   where: The Karlsruhe Institute of Technology
+
+# - when: 06/04
+#   what: Abitur
+#   where: Friedrich-Koenig-Gymnasium, Wuerzburg

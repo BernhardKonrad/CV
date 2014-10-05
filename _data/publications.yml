@@ -1,4 +1,16 @@
 papers:
+ - when: 08/14
+   authors: 
+    - Carmen Bruni
+    - Christina Koch
+    - Bernhard Konrad
+    - Michael Lindstroem
+    - Iain Moyles
+    - William Thompson
+   title: "From Exam to Education: The Math Exam/Educational Resources wiki"
+   journal: Submitted to PRIMUS
+
+
  - when: 07/14
    authors:
      - Taylor D
