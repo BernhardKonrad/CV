@@ -40,10 +40,12 @@ side:
     - Android developer
    languages:
     - Java
+    - Python
     - SQL
     - Android Studio
    items:
     - Self-taught from <a href="https://class.coursera.org/android-001">Dr. Adam Porter's Coursera class</a>.
+    - Scrape content from the MER webpage using Python-lxml.html and store into SQL database so that it can be read by the App.
 
  - from: 01/13
    to: present
