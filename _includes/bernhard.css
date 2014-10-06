@@ -6,6 +6,10 @@
 body, html{
   margin: 10pt;
   padding: 0;
+  height: 100%;
+}
+#header {
+   padding:0px;
 }
 ul.square {
     list-style-type: square;
@@ -67,6 +71,22 @@ a:hover {
     width: 100%;
 }
 
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+#body {
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+#footer {
+   position: relative;
+   text-align: right;
+   bottom:-10px;
+   width:100%;
+   padding-bottom: 15px
+}
  
 .nav ul {
   list-style: none;
@@ -99,7 +119,7 @@ a:hover {
   color: #444;
   cursor: default;
 }
- 
+
 @media screen and (min-width: 600px) {
   .nav li {
     width: 150px;

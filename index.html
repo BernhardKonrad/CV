@@ -5,7 +5,8 @@ layout: post
 
 {% include bernhard.css %}
 
-<header>
+<div id="container">
+<div id="header">
   <div class="nav">
     <ul>
       <li class="education"><a href="#Education">Education</a></li>
@@ -14,8 +15,9 @@ layout: post
       <li class="publications"><a href="#Publications">Scientific</a></li>
     </ul>
   </div>
-</header>
+</div>
 
+<div id="body">
 <div class="personal_info">
   <h1>{{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
 
@@ -114,35 +116,35 @@ layout: post
   {% endfor %}
   </div>
 
-<div class="wrapper">
-  <h3> Software Carpentry Workshops <a href="http://www.software-carpentry.org">software-carpentry.org</a> </h3>
+  <div class="wrapper">
+    <h3> Software Carpentry Workshops <a href="http://www.software-carpentry.org">software-carpentry.org</a> </h3>
 
-  {% for pos in site.data.teaching.swc %}
-    <div class="when_what">
-      <div class="when">
-        {{pos.from}} - {{pos.to}}.
+    {% for pos in site.data.teaching.swc %}
+      <div class="when_what">
+        <div class="when">
+          {{pos.from}} - {{pos.to}}.
+        </div>
+        <div class="what">
+          <b> {{pos.role}} {{pos.what}} </b><i>{{pos.where}}.</i> 
+        </div>
       </div>
-      <div class="what">
-        <b> {{pos.role}} {{pos.what}} </b><i>{{pos.where}}.</i> 
-      </div>
-    </div>
-  {% endfor %}
-</div>  
+    {% endfor %}
+  </div>
 
-<div class="wrapper">
-  <h3> At The Karlsruhe Institute of Technology </h3>
-
-  {% for pos in site.data.teaching.kit %}
-    <div class="when_what">
-      <div class="when">
-        {{pos.from}} - {{pos.to}}.
+  <div class="wrapper">
+    <h3> At The Karlsruhe Institute of Technology </h3>
+  
+    {% for pos in site.data.teaching.kit %}
+      <div class="when_what">
+        <div class="when">
+          {{pos.from}} - {{pos.to}}.
+        </div>
+        <div class="what"> 
+          <b> {{pos.what}}</b> {% if pos.details %}{{pos.details}}.{% endif %}
+        </div>
       </div>
-      <div class="what"> 
-        <b> {{pos.what}}</b> {% if pos.details %}{{pos.details}}.{% endif %}
-      </div>
-    </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
 </div>
 
 
@@ -255,6 +257,6 @@ layout: post
     {{interest}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} 
   {% endfor %}
 </div>
+</div>
 
-<br /><br />
-<div align="right"> Vancouver, October 2014 </div>
+<div id="footer">Vancouver, October 2014</div>
