@@ -17,11 +17,12 @@ layout: post
     </div>
   </div>
 
+
   <div id="my_body">
     <div class="personal_info">
       <h1>{{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
 
-      <a href="mailto:{{site.data.personal.email}}">{% include svg-icons/email.html %}</a> <a href=https://github.com/{{site.data.personal.github}}>{% include svg-icons/github.html %}</a> <a href=https://twitter.com/{{site.data.personal.twitter}}>{% include svg-icons/twitter.html %}</a>
+      <a href="mailto:{{site.data.personal.email}}">{% include svg-icons/email.html %}</a> &nbsp; &nbsp; <a href=https://github.com/{{site.data.personal.github}}>{% include svg-icons/github.html %}</a> &nbsp; &nbsp; <a href=https://twitter.com/{{site.data.personal.twitter}}>{% include svg-icons/twitter.html %}</a>
       <br /><br />
 
       {{site.data.personal.street}}, {{site.data.personal.city}}, {{site.data.personal.province}}, {{site.data.personal.postal}}, {{site.data.personal.country}}
@@ -37,7 +38,7 @@ layout: post
       </p>
 
       <p class="left">
-        Nationality&#58;
+        Citizenship&#58;
       </p>
       <p class="right">
         {{site.data.personal.nationality}}
