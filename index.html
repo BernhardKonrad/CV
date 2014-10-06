@@ -161,7 +161,7 @@ layout: post
         {% for author in paper.authors %}
           {% if author contains 'Konrad' %}<b>{{author}}</b>{% else %}{{author}}{% endif %}{% unless {{forloop.last}} %}, {% else %}.{% endunless %}
         {% endfor %}
-        <i>{{paper.title}}.</i> {{paper.journal}}, {{paper.publish_date}}{% if paper.doi %}<div class="doi">&nbsp;(doi: {{paper.doi}})</div>{% endif %}.
+        <i>{{paper.title}}.</i> {{paper.journal}}{% if paper.publish_date %}, {{paper.publish_date}}{% if paper.doi %}<div class="doi">&nbsp;(doi: {{paper.doi}})</div>{% endif %}{% endif %}.
       </div>
     </div>
   {% endfor %}
@@ -170,7 +170,7 @@ layout: post
 
 <div class="wrapper">
   <a NAME="Talks"></a>
-  <h2> Selected Seminar talks and Poster Presentations </h2>
+  <h2> Selected Conference talks and Poster Presentations </h2>
 
   {% for talk in site.data.talks.talks %}
     <div class="when_what">
