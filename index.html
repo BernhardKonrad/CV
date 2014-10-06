@@ -5,258 +5,250 @@ layout: post
 
 {% include bernhard.css %}
 
-<div id="container">
-<div id="header">
-  <div class="nav">
-    <ul>
-      <li class="education"><a href="#Education">Education</a></li>
-      <li class="side Projects"><a href="#Side Projects">Programming</a></li>
-      <li class="teching"><a href="#Teaching">Teaching</a></li>
-      <li class="publications"><a href="#Publications">Scientific</a></li>
-    </ul>
-  </div>
-</div>
-
-<div id="body">
-<div class="personal_info">
-  <h1>{{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
-
-  <a href="mailto:{{site.data.personal.email}}">{% include svg-icons/email.html %}</a> <a href=https://github.com/{{site.data.personal.github}}>{% include svg-icons/github.html %}</a> <a href=https://twitter.com/{{site.data.personal.twitter}}>{% include svg-icons/twitter.html %}</a>
-
-
-
-  <br />
-  {{site.data.personal.street}}, {{site.data.personal.city}}, {{site.data.personal.province}}, {{site.data.personal.postal}}, {{site.data.personal.country}}
-  <br /><br />
-
-
-  <div class="left">
-    Place of Birth&#58;
-  </div>
-  <div class="right">
-    {{site.data.personal.birth.place}}
-  </div>
-
-  <div class="left">
-    Nationality&#58;
-  </div>
-  <div class="right">
-    {{site.data.personal.nationality}}
-  </div>
-
-  <div class="left">
-    Programming Languages:
-  </div>
-  <div class="right">
-    <b>{% for lan in {{site.data.personal.programming_languages}} %} {{lan}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} {% endfor %}</b>
-  </div>
-</div>
-
-
-<div class="wrapper">
-  <a NAME="Education"></a>
-  <h2> Education </h2>
-  
-  {% for edu in site.data.education.edu %}
-  <div class="when_what">
-  <div class="when">
-    {% if edu.from %} {{edu.from}} - {{edu.to}}{% else %} {{edu.when}}{% endif %}.
-  </div>
-  <div class="what">
-    {{edu.what}} at <i>{{edu.where}}.</i><br />
-    {% if edu.thesis_title %} Thesis: {{edu.thesis_title}}<br />{% endif %}
-    {% if edu.prof %} Supervisor: <b>{{edu.prof}}</b><br />{% endif %}
-    {% unless {{forloop.last}} %}<br />{% endunless %}
-  </div>
-  </div>
-  {% endfor %}
-</div>
-
-
-<div class="wrapper">
-  <a NAME="Side Projects"></a>
-  <h2> Programming Experience</h2>
-
-  {% for side in site.data.sideprojects.side %}
-  <div class="when_what">
-    <div class="when">
-      {% if side.from %} {{side.from}} - {{side.to}}{% else %} {{side.when}}{% endif %}.</div>
-    <div class="what">
-      {% if {{side.url}} %}<a href={{side.url}}>{{side.what}}.</a> {% else %} {{side.what}}.{% endif %}
-      <b>{% for language in {{side.languages}} %} {{language}}{% unless {{forloop.last}} %},{% endunless %} {% endfor %}</b> <br/ >
-      {% for role in {{side.roles}} %}
-        {{role}}{% unless {{forloop.last}} %},{% else %}.{% endunless %}
-      {% endfor %}
-      <ul class="square">
-        {% for item in {{side.items}} %}
-          <li> {{item}} </li>
-        {% endfor %}
+<div id="my_container">
+  <div id="my_header">
+    <div class="nav">
+      <ul>
+        <li class="education"><a href="#Education">Education</a></li>
+        <li class="side Projects"><a href="#Side Projects">Programming</a></li>
+        <li class="teching"><a href="#Teaching">Teaching</a></li>
+        <li class="publications"><a href="#Publications">Scientific</a></li>
       </ul>
     </div>
   </div>
-  {% endfor %}
-</div>
+
+  <div id="my_body">
+    <div class="personal_info">
+      <h1>{{ site.data.personal.firstname }} {{ site.data.personal.lastname }} </h1>
+
+      <a href="mailto:{{site.data.personal.email}}">{% include svg-icons/email.html %}</a> <a href=https://github.com/{{site.data.personal.github}}>{% include svg-icons/github.html %}</a> <a href=https://twitter.com/{{site.data.personal.twitter}}>{% include svg-icons/twitter.html %}</a>
+      <br /><br />
+
+      {{site.data.personal.street}}, {{site.data.personal.city}}, {{site.data.personal.province}}, {{site.data.personal.postal}}, {{site.data.personal.country}}
+
+      <br /><br />
 
 
-<div class="wrapper">
-  <a NAME="Teaching"></a>
-  <h2> Teaching Experience </h2>
+      <p class="left">
+        Place of Birth&#58;
+      </p>
+      <p class="right">
+        {{site.data.personal.birth.place}}
+      </p>
 
-  <div class="wrapper">
-  <h3> At The University of British Columbia </h3>
-  {% for pos in site.data.teaching.ubc %}
-    <div class="when_what">
+      <p class="left">
+        Nationality&#58;
+      </p>
+      <p class="right">
+        {{site.data.personal.nationality}}
+      </p>
+
+      <p class="left">
+        Programming Languages:
+      </p>
+      <p class="right">
+        <b>{% for lan in {{site.data.personal.programming_languages}} %} {{lan}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} {% endfor %}</b>
+      </p>
+    </div>
+    
+    <div class="wrapper">
+      <a NAME="Education"></a>
+      <h2> Education </h2>
+      
+      {% for edu in site.data.education.edu %}
+      <div class="when_what">
       <div class="when">
-        {{pos.from}} - {{pos.to}}.
+        {% if edu.from %} {{edu.from}} - {{edu.to}}{% else %} {{edu.when}}{% endif %}.
       </div>
       <div class="what">
-        <b> {{pos.what}}.</b> {% if pos.details %}{{pos.details}}.{% endif %}
+        {{edu.what}} at <i>{{edu.where}}.</i><br />
+        {% if edu.thesis_title %} Thesis: {{edu.thesis_title}}<br />{% endif %}
+        {% if edu.prof %} Supervisor: <b>{{edu.prof}}</b><br />{% endif %}
+        {% unless {{forloop.last}} %}<br />{% endunless %}
       </div>
+      </div>
+      {% endfor %}
     </div>
-  {% endfor %}
-  </div>
 
-  <div class="wrapper">
-    <h3> Software Carpentry Workshops <a href="http://www.software-carpentry.org">software-carpentry.org</a> </h3>
 
-    {% for pos in site.data.teaching.swc %}
+
+
+
+
+
+    <div class="wrapper">
+      <a NAME="Side Projects"></a>
+      <h2> Programming Experience</h2>
+
+      {% for side in site.data.sideprojects.side %}
       <div class="when_what">
         <div class="when">
-          {{pos.from}} - {{pos.to}}.
-        </div>
+          {% if side.from %} {{side.from}} - {{side.to}}{% else %} {{side.when}}{% endif %}.</div>
         <div class="what">
-          <b> {{pos.role}} {{pos.what}} </b><i>{{pos.where}}.</i> 
+          {% if {{side.url}} %}<a href={{side.url}}>{{side.what}}.</a> {% else %} {{side.what}}.{% endif %}
+          <b>{% for language in {{side.languages}} %} {{language}}{% unless {{forloop.last}} %},{% endunless %} {% endfor %}</b> <br/ >
+          {% for role in {{side.roles}} %}
+            {{role}}{% unless {{forloop.last}} %},{% else %}.{% endunless %}
+          {% endfor %}
+          <ul class="square">
+            {% for item in {{side.items}} %}
+              <li> {{item}} </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
 
-  <div class="wrapper">
-    <h3> At The Karlsruhe Institute of Technology </h3>
-  
-    {% for pos in site.data.teaching.kit %}
-      <div class="when_what">
-        <div class="when">
-          {{pos.from}} - {{pos.to}}.
+
+    <div class="wrapper">
+      <a NAME="Teaching"></a>
+      <h2> Teaching Experience </h2>
+
+      <div class="wrapper">
+      <h3> At The University of British Columbia </h3>
+      {% for pos in site.data.teaching.ubc %}
+        <div class="when_what">
+          <div class="when">
+            {{pos.from}} - {{pos.to}}.
+          </div>
+          <div class="what">
+            <b> {{pos.what}}.</b> {% if pos.details %}{{pos.details}}.{% endif %}
+          </div>
         </div>
-        <div class="what"> 
-          <b> {{pos.what}}</b> {% if pos.details %}{{pos.details}}.{% endif %}
-        </div>
+      {% endfor %}
       </div>
-    {% endfor %}
-  </div>
-</div>
 
+      <div class="wrapper">
+        <h3> Software Carpentry Workshops <a href="http://www.software-carpentry.org">software-carpentry.org</a> </h3>
 
-<div class="wrapper">
-  <a NAME="Publications"></a>
-  <h2> Publications </h2>
-
-  {% for paper in site.data.publications.papers %}
-    <div class="when_what">
-      <div class="when">
-        {{paper.when}}.
-      </div>
-      <div class="what">
-        {% for author in paper.authors %}
-          {% if author contains 'Konrad' %}<b>{{author}}</b>{% else %}{{author}}{% endif %}{% unless {{forloop.last}} %}, {% else %}.{% endunless %}
+        {% for pos in site.data.teaching.swc %}
+          <div class="when_what">
+            <div class="when">
+              {{pos.from}} - {{pos.to}}.
+            </div>
+            <div class="what">
+              <b> {{pos.role}} {{pos.what}} </b><i>{{pos.where}}.</i> 
+            </div>
+          </div>
         {% endfor %}
-        <i>{{paper.title}}.</i> {{paper.journal}}{% if paper.publish_date %}, {{paper.publish_date}}{% if paper.doi %}<div class="doi">&nbsp;(doi: {{paper.doi}})</div>{% endif %}{% endif %}.
+      </div>
+
+      <div class="wrapper">
+        <h3> At The Karlsruhe Institute of Technology </h3>
+      
+        {% for pos in site.data.teaching.kit %}
+          <div class="when_what">
+            <div class="when">
+              {{pos.from}} - {{pos.to}}.
+            </div>
+            <div class="what"> 
+              <b> {{pos.what}}</b> {% if pos.details %}{{pos.details}}.{% endif %}
+            </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
-  {% endfor %}
-</div>
 
 
-<div class="wrapper">
-  <a NAME="Talks"></a>
-  <h2> Selected Conference talks and Poster Presentations </h2>
+    <div class="wrapper">
+      <a NAME="Publications"></a>
+      <h2> Publications </h2>
 
-  {% for talk in site.data.talks.talks %}
-    <div class="when_what">
-      <div class="when">
-        {{talk.when}}.
-      </div>
-      <div class="what">
-        <i>{{talk.title}}</i><br />
-          {{talk.conference}} in {{talk.where}}{% if talk.others %} ({{talk.others}}){% endif %}.
-      </div>
+      {% for paper in site.data.publications.papers %}
+        <div class="when_what">
+          <div class="when">
+            {{paper.when}}.
+          </div>
+          <div class="what">
+            {% for author in paper.authors %}
+              {% if author contains 'Konrad' %}<b>{{author}}</b>{% else %}{{author}}{% endif %}{% unless {{forloop.last}} %}, {% else %}.{% endunless %}
+            {% endfor %}
+            <i>{{paper.title}}.</i> {{paper.journal}}{% if paper.publish_date %}, {{paper.publish_date}}{% if paper.doi %}<div class="doi">&nbsp;(doi: {{paper.doi}})</div>{% endif %}{% endif %}.
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
-</div>
 
-<!--
-<div class="wrapper">
-  <h2> Studies Abroad </h2>
 
-  {% for studies in site.data.others.studies_abroad %}
-    <div class="when_what">
-      <div class="when">
-        {{studies.from}} - {{studies.to}}.
-      </div>
-      <div class="what">
-        {{studies.details}}
-      </div>
-  {% endfor %}
-</div>
--->
+    <div class="wrapper">
+      <a NAME="Talks"></a>
+      <h2> Selected Conference talks and Poster Presentations </h2>
 
-<div class="wrapper">
-  <h2> Summer Schools and Workshops </h2>
-
-  {% for ws in site.data.others.workshop %}
-    <div class="when_what">
-      <div class="when">
-        {{ws.when}}.
-      </div>
-      <div class="what">
-        </i> {{ws.name}}, <b>{{ws.where}}</b> <br />
-        <i> Project: {{ws.project}}.</i>
-      </div>
+      {% for talk in site.data.talks.talks %}
+        <div class="when_what">
+          <div class="when">
+            {{talk.when}}.
+          </div>
+          <div class="what">
+            <i>{{talk.title}}</i><br />
+              {{talk.conference}} in {{talk.where}}{% if talk.others %} ({{talk.others}}){% endif %}.
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
-</div>
 
-<div class="wrapper">
-  <h2> Scholarships </h2>
+    <div class="wrapper">
+      <h2> Summer Schools and Workshops </h2>
 
-  {% for scholar in site.data.scholarships.scholarship %}
-    <div class="when_what">
-      <div class="when">
-        {{scholar.from}} - {{scholar.to}}.
-      </div>
-      <div class="what">
-        <b>{{scholar.what}}</b> from the <i>{{scholar.who}}</i>{%if scholar.details %} ({{scholar.details}}){% endif %}.
-      </div>
+      {% for ws in site.data.others.workshop %}
+        <div class="when_what">
+          <div class="when">
+            {{ws.when}}.
+          </div>
+          <div class="what">
+            {{ws.name}}, <b>{{ws.where}}</b> <br />
+            <i> Project: {{ws.project}}.</i>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
-</div>
 
+    <div class="wrapper">
+      <h2> Scholarships </h2>
 
-<div class="wrapper">
-  <a NAME="Extracurricular"></a>
-  <h2> Extracurricular Activities </h2>
-
-  {% for activity in site.data.others.extracurricular %}
-    <div class="when_what">
-      <div class="when">
-        {% if activity.from %} {{activity.from}} - {{activity.to}}{% else %} {{activity.when}}{% endif %}.
-      </div>
-      <div class="what">
-        {{activity.what}}.
-      </div>
+      {% for scholar in site.data.scholarships.scholarship %}
+        <div class="when_what">
+          <div class="when">
+            {{scholar.from}} - {{scholar.to}}.
+          </div>
+          <div class="what">
+            <b>{{scholar.what}}</b> from the <i>{{scholar.who}}</i>{%if scholar.details %} ({{scholar.details}}){% endif %}.
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+
+
+    <div class="wrapper">
+      <a NAME="Extracurricular"></a>
+      <h2> Extracurricular Activities </h2>
+
+      {% for activity in site.data.others.extracurricular %}
+        <div class="when_what">
+          <div class="when">
+            {% if activity.from %} {{activity.from}} - {{activity.to}}{% else %} {{activity.when}}{% endif %}.
+          </div>
+          <div class="what">
+            {{activity.what}}.
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+
+    <div class="wrapper">
+      <h2> Personal Interest </h2>
+
+      {% for interest in site.data.others.personal_interest %}
+        {{interest}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} 
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+  <div id="my_footer">
+      Vancouver, October 2014
+  </div>
 </div>
-
-
-<div class="wrapper">
-  <h2> Personal Interest </h2>
-
-  {% for interest in site.data.others.personal_interest %}
-    {{interest}}{% unless {{forloop.last}} %},{% else %}.{% endunless %} 
-  {% endfor %}
-</div>
-</div>
-
-<div id="footer">Vancouver, October 2014</div>

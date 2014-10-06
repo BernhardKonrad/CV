@@ -40,7 +40,7 @@ side:
     - Android developer
    languages:
     - Java
-    - Python
+    - Python (lxml.html)
     - SQL
     - Android Studio
    items:

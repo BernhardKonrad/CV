@@ -4,9 +4,8 @@
     font-size: 12px;
 }
 body, html{
-  margin: 10pt;
+  margin: 0pt;
   padding: 0;
-  height: 100%;
 }
 #header {
    padding:0px;
@@ -16,7 +15,7 @@ ul.square {
 }
 h2{
     background-color: #B4CDCD;
-    padding: 5pt;
+    padding: 2pt;
 }
 
 a:hover {
@@ -45,6 +44,14 @@ a:hover {
     width: 49%;
 }
 
+
+.full_right {
+    position: absolute;
+    text-align: right;
+    margin: auto;
+    width: 100%;
+}
+
 .when_what {
     float: left;
     margin: auto;
@@ -71,21 +78,23 @@ a:hover {
     width: 100%;
 }
 
-#container {
+#my_container {
    min-height:100%;
-   position:relative;
+   position:absolute;
 }
 
-#body {
-   padding-bottom:60px;   /* Height of the footer */
+#my_body {
+  margin: 10pt;
+
 }
 
-#footer {
-   position: relative;
+#my_footer {
+   position: absolute;
    text-align: right;
-   bottom:-10px;
+   bottom:-35pt;
+   right: 10pt;
+   margin-bottom: 15pt;
    width:100%;
-   padding-bottom: 15px
 }
  
 .nav ul {
@@ -107,7 +116,6 @@ a:hover {
   text-decoration: none;
   color: #fff;
   display: block;
-  transition: .3s background-color;
 }
  
 .nav a:hover {
